@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: var(--branco);
+}
+:root {
+    --branco: #edf1f7;
+    --vermelho: #c51212;
+    --azul: #0041c2;
+    --verde: #14b02d;
+    --amarelo: #ffc12b;
+
+    --sombra: linear-gradient(to right, #000000dd, #00000088, #000000dd);
+
+    --fonte-padrao: 'Mukta-Regular', 'Poppins-Regular', 'Questrial-Regular', Arial, Sans-serif;
+}
+
+video {
+    position: fixed;
+    inset: 0;
+
+    z-index: -1;
+
+    height: 100vh;
+}
+#sombra {
+    width: 100%;
+    height: 100vh;
+
+    z-index: -1;
+
+    position: fixed;
+
+    background-image: var(--sombra);
+}
+
+header {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#Menu {
+    position: relative;
+
+    list-style: none;
+
+    li {
+        position: absolute;
+        top: 25px;
+    }
+    #logo {
+        left: 50px;
+        
+        img {
+            width: 60px;
+        }
+    }
+    #links {
+        left: 15%;
+        top: 5px;
+        
+        ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+
+            li {
+                top: 25px;
+                position: relative;
+
+                text-transform: uppercase;
+
+                a {
+                    text-decoration: none;
+                    font-family: var(--fonte-padrao);
+                    font-size: 8pt;
+                    letter-spacing: 2px;
+                    color: var(--branco);
+
+                    opacity: 0.8;
+
+                    transition: .3s;
+                }
+                a:hover {
+                    color: var(--vermelho);
+
+                    opacity: 1;
+                }
+                a:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+
+                    width: 100%;
+                    height: 1px;
+
+                    background-color: var(--vermelho);
+
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform .3s;
+                }
+                a:hover:after {
+                    transform-origin: left;
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+    #redes-sociais {
+        right: 0;
+
+        display: flex;
+        gap: 20px;
+
+        top: 30px;
+
+        img {
+            width: 20px;
+        
+            transition: 0.3s;
+
+            opacity: 0.6;
+        }
+        img:hover {
+            transform: translateY(-2px);
+
+            opacity: 1;
+        }
+    }
+}
+main {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1100px;
+    margin: auto;
+
+    #conteudo-main {
+        margin-top: 150px;
+        p {
+            max-width: 500px;
+
+            text-indent: 40px;
+            text-justify: auto;
+            line-height: 25px;
+
+            margin: 30px 0px;
+
+            font-size: 12pt;
+            font-family: var(--fonte-padrao);
+        }
+
+        img {
+            width: 200px;
+        }
+        input {
+            width: 45%;
+            margin: 0px 5px;
+            padding: 5px 0px;
+
+            transform: skew(-15deg);
+        }
+        input:hover {
+            cursor: pointer;
+        }
+        #assistir {
+            background-color: var(--vermelho);
+
+            border: 1px var(--vermelho) solid;
+            border-radius: 3px;
+
+            font-family: var(--fonte-padrao);
+            font-size: 12pt;
+
+            color: var(--branco);
+
+            opacity: 0.8;
+
+            transition: .3s;
+        }
+        #assistir:hover {
+            box-shadow: 0px 0px 10px #ffffff67;
+            
+            opacity: 1;
+        }
+        #comprar {
+            background-color: transparent;
+
+            border: 1px var(--verde) solid;
+            border-radius: 3px;
+
+            font-family: var(--fonte-padrao);
+            font-size: 12pt;
+            
+            color: var(--branco);
+
+            opacity: 0.8;
+
+            transition: .3s;
+        }
+        #comprar:hover {
+            box-shadow: 0px 0px 10px #ffffff67;
+            
+            opacity: 1;
+        }
+    }
+    picture img {
+        margin-top: 150px;
+        height: 450px;
+    }
+}

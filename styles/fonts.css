@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Mukta-Regular';
+    src: url('Mukta_Malar/MuktaMalar-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Mukta-bold';
+    src: url('Mukta_Malar/MuktaMalar-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Mukta-light';
+    src: url('Mukta_Malar/MuktaMalar-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('Poppins/Poppins-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('Poppins/Poppins-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('Poppins/Poppins-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Questrial-Regular';
+    src: url('Questrial/Questrial-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
